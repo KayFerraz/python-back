@@ -33,7 +33,7 @@ with open('arquivo_kay.txt', 'r') as arquivo:
 def fazer_perguntas(perguntas):
     
     return arquivo
-
+aa
 print(f'Tempo total para responder as perguntas: {tempo_total}')
 for i in range(10):
         linha = input(f"{i+1}. {perguntas[i]}")
