@@ -20,7 +20,7 @@ tempo_final = datetime.datetime.now()
 tempo_total = tempo_final - tempo_inicial
 
 
-with open('arquivo_kay.txt', 'w') as arquivo:
+with open('arquivo_kay.txt', '+a') as arquivo:
     escrever = input('digite algo:')
     
     arquivo.write(escrever)
@@ -30,30 +30,29 @@ with open('arquivo_kay.txt', 'r') as arquivo:
     conteudo = arquivo.read()
     print(conteudo)
 
-def fazer_perguntas(perguntas):
-    
-    open (conteudo)
+
+    arquivo.seek(2)
     linha = input('\n' )
     input("1. O que é Python?")
-    arquivo.write(linha + '\n' )
+    arquivo.seek(2)
     input("2. Quais são os tipos de dados básicos em Python?")
-    arquivo.write(linha + '\n')
+    arquivo.seek(2)
     input("3. O que são listas em Python?")
-    arquivo.write(linha + '\n')
+    arquivo.seek(2)
     input("4. Como você define uma função em Python?")
-    arquivo.write(linha + '\n')
+    arquivo.seek(2)
     input("5. O que é um dicionário em Python?")
-    arquivo.write(linha + '\n')
+    arquivo.seek(2)
     input("6. Como você faz um loop em Python?")
-    arquivo.write(linha + '\n')
+    arquivo.seek(2)
     input("7. O que são classes em Python?")
-    arquivo.write(linha + '\n') 
+    arquivo.seek(2) 
     input("8. Como você trata exceções em Python?")
-    arquivo.write(linha + '\n') 
+    arquivo.seek(2) 
     input("9. O que é uma compreensão de lista?")
-    arquivo.write(linha + '\n')
+    arquivo.seek(2)
     input("10. Como você importa módulos em Python?")
-    arquivo.write(linha + '\n')
+    arquivo.seek(2)
     print(f'Tempo total para responder as perguntas: {tempo_total}')
-    return perguntas
-print(fazer_perguntas)
+    
+    arquivo.close()
