@@ -3,7 +3,9 @@
 
 import sqlite3
 
-try:
+try: 
+    sqlite_con = sqlite3.connect("voluntarios.db")
+    cursor = sqlite_con.cursor()
 
 except sqlite3.Error as error:
     print("Erro:", error)
