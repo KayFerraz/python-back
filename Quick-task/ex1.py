@@ -3,6 +3,7 @@
 # dos colaboradores ou dos idosos seu projeto da disciplina.
 #  Não esqueça de considerar que 
 # cada idoso/colaborador tem um ID
+
 import sqlite3
 try:
     iniciar = sqlite3.connect("voluntarios.db")
